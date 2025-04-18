@@ -1,3 +1,47 @@
-p {
-  background-color: aliceblue;
+:root {
+  --color1: #1f2421;
+  --color2: #216869;
+  --color3: #49a078;
+  --color4: #9cc5a1;
+  --color5: #dce1de;
+  --color6: #5da9e9;
+  --color7: #27233a;
+  --color8: #505168;
+  --color9: lightblue;
+}
+
+#upper-panel-1 {
+  background-color: var(--color1);
+}
+
+#upper-panel-2 {
+  background-color: var(--color2);
+}
+
+#sideline {
+  background-color: var(--color3);
+}
+
+#dashboard-icon {
+  background-color: var(--color4);
+}
+
+#section1 {
+  background-color: var(--color5);
+}
+
+#section2 {
+  background-color: var(--color6);
+}
+
+#your-project {
+  background-color: var(--color7);
+}
+
+#announcements {
+  background-color: var(--color8);
+}
+
+#trending {
+  background-color: var(--color9);
 }
