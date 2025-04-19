@@ -116,9 +116,50 @@
 #your-project {
   grid-row: 3 / 9;
   grid-column: 2 / 8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px repeat(4, 1fr);
+
+  background-color: gray;
+  grid-row-gap: 100px;
+}
+
+#your-projects-title {
+  grid-column: 1/3;
+}
+
+#your-project1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#your-project2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#your-project3 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+#your-project4 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#your-project5 {
+  grid-column: 1 / 2;
+  grid-row: 4/5;
+}
+
+#your-project6 {
+  grid-column: 2 / 3;
+  grid-row: 4/5;
 }
 
 #announcements {
+  grid-column: 8 / 9;
   grid-row: 3 / 6;
 }
 
