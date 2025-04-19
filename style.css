@@ -54,10 +54,10 @@
 /* CODE FROM HERE */
 
 #container {
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: 50px 80px repeat(6, 1fr);
+  height: 100vh;
 }
 
 #dashboard-icon {
@@ -73,12 +73,16 @@
 
 #upper-panel-1 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 #upper-panel-2 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#search-icon {
+  grid-column: 2/3;
 }
 
 #sideline {
@@ -100,11 +104,24 @@
 #section1 {
   display: grid;
   grid-row: 1 / 5;
-  gap: 25px;
+  gap: 20px;
 }
 
 #section2 {
   display: grid;
   grid-row: 6 / 8;
-  gap: 25px;
+  gap: 20px;
+}
+
+#your-project {
+  grid-row: 3 / 9;
+  grid-column: 2 / 8;
+}
+
+#announcements {
+  grid-row: 3 / 6;
+}
+
+#trending {
+  grid-row: 6/9;
 }
