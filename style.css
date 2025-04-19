@@ -8,6 +8,7 @@
   --color7: #27233a;
   --color8: #505168;
   --color9: lightblue;
+  --gray-background: gray;
 }
 
 * {
@@ -41,7 +42,7 @@
 }
 
 #your-project {
-  background-color: var(--color7);
+  background-color: var(--gray-background);
 }
 
 #announcements {
@@ -115,12 +116,17 @@
 }
 
 #your-project {
+  --project-padding: 25px;
+  --project-border: 5px solid white;
+  --project-left-border-style: 7px solid rgb(204, 195, 20);
   grid-row: 3 / 9;
   grid-column: 2 / 8;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50px repeat(4, 1fr);
-  background-color: gray;
+
+  gap: 15px;
+  margin: 0 15px 0 15px;
 }
 
 #your-projects-title {
@@ -130,31 +136,59 @@
 #your-project1 {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #your-project2 {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  padding: var(--project-padding);
+  border: 5px solid white;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #your-project3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  padding: var(--project-padding);
+  border: 5px solid white;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #your-project4 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  padding: var(--project-padding);
+  border: 5px solid white;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #your-project5 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  padding: var(--project-padding);
+  border: 5px solid white;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #your-project6 {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
+  padding: var(--project-padding);
+  border: 5px solid white;
+  padding: var(--project-padding);
+  border: var(--project-border);
+  border-left: var(--project-left-border-style);
 }
 
 #announcements {
@@ -173,7 +207,6 @@
   margin-top: 20px;
   margin-bottom: 30px;
   align-items: center;
-
   color: var(--color5);
   font-weight: 600;
 }
