@@ -4,7 +4,8 @@
   --sidebar-background: #2892e9;
 
   --color9: lightblue;
-  --gray-background: gray;
+  --gray-background: lab(86.77% 0.34 0.11);
+  --button-blue: #2892e9;
 }
 
 * {
@@ -19,7 +20,7 @@
   background-color: var(--white-color);
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 50px 80px repeat(6, 1fr);
+  grid-template-rows: 50px 100px repeat(6, 1fr);
   height: 100vh;
 }
 
@@ -30,24 +31,118 @@
 #upper-panels {
   background-color: var(--white-pure);
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column: 1 / 9;
+  grid-column: 2 / 9;
   grid-row: 1 / 3;
+
+  box-shadow: 0px 5px var(--gray-background);
 }
 
 #upper-panel-1 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 #upper-panel-2 {
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#upper-panel-2-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 58px;
+  gap: 25px;
+}
+
+#new,
+#upload,
+#share {
+  background-color: var(--button-blue);
+  color: var(--white-pure);
+  border: 5px solid var(--button-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 15px;
+  width: 60px;
 }
 
 #search-icon {
-  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  grid-column: 1/2;
+  gap: 10px;
 }
+
+#search-icon > svg,
+#bell-icon > svg {
+  height: 20px;
+  width: auto;
+  fill: black;
+}
+
+#profile-picture > svg {
+  height: 30px;
+  width: auto;
+  fill: black;
+}
+
+#upper-panel-1-section-1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-column: 1 / 2;
+  margin-left: 75px;
+}
+
+#upper-panel-1-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 75px;
+  gap: 25px;
+}
+
+#search-icon > input {
+  width: 800px;
+  border: 2px solid var(--gray-background);
+  border-radius: 10px;
+  height: 20px;
+  background-color: var(--gray-background);
+}
+
+#upper-panel-1-section-2 {
+  grid-column: 2 / 3;
+}
+
+/* Section 2*/
+
+#logo > svg {
+  height: 50px;
+  width: auto;
+  fill: black;
+}
+
+#upper-panel-2-section-1 {
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+}
+
+#initial-greeting {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+#name-greeting {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* SIDELINE */
 
 #sideline {
   background-color: var(--sidebar-background);
@@ -106,12 +201,6 @@
   width: auto;
   fill: white;
   margin-right: 10px;
-}
-
-#search-icon > svg {
-  height: 20px;
-  width: auto;
-  fill: black;
 }
 
 #your-project {
